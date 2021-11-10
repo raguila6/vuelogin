@@ -1,3 +1,3 @@
 <template>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem beatae vero, adipisci cumque ratione nam aut sit ab. Officia reprehenderit eaque odio dignissimos hic obcaecati optio odit soluta temporibus.</p>
+    <iframe width="420" height="315" src="https://youtu.be/dQw4w9WgXcQ" ></iframe>
 </template>
