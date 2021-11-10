@@ -9,8 +9,8 @@ const password = ref("");
 
 const router = useRouter();
 
-const logginIn = () => {
-    login(username.value, password.value);
+const logginIn = async() => {
+    await login(username.value, password.value);
     if(isAuthenticated.value){
        router.push("/");
     } else {
@@ -34,7 +34,7 @@ const { ready, start } = useTimeout(3000, { controls: true });
 
              <h2 class="text-xl font-medium">Log onto Account</h2>
 
-             Logged in : {{isAuthenticated}}
+            
         <div class="flex bg-gray-200 shadow-2xl rounded-2xl">   
             <img class="h-60" src="../assets/loginpg.png"  alt="loginBG">
 

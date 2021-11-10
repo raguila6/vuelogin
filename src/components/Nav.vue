@@ -13,10 +13,10 @@
 </script>
 
 <template>
-     <div class="text-yellow-300 bg-indigo-700">
+     <div class="text-yellow-300 bg-green-700">
           <div class="container flex items-center justify-between mx-auto">
             <h1 class="text-2xl font-medium tracking-tight ">
-               Vue<span class="font-normal">FakeAuth</span>
+               Vue<span class="font-normal">RealAuth</span>
                    
             </h1>
             <nav>

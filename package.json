@@ -1,5 +1,5 @@
 {
-  "name": "vuefakeauth",
+  "name": "vuerealauth",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^6.7.5",
+    "firebase": "^9.4.0",
     "remove": "^0.1.5",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
