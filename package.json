@@ -10,9 +10,11 @@
     "@vueuse/core": "^6.7.5",
     "firebase": "^9.4.0",
     "remove": "^0.1.5",
+    "vee-validate": "^4.5.5",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
-    "vue-undraw": "^2.0.13"
+    "vue-undraw": "^2.0.13",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
