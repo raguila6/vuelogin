@@ -3,8 +3,11 @@
     import { onUnmounted, ref } from "vue"
 
     import useChat from "../composable/useChat"
+    import useAuth from "../composable/useAuth"
 
     const  {messages, unsubscribe, sendMessage} = useChat()
+
+    const {user} = useAuth()
 
     const newMessage = ref('')
 
@@ -29,7 +32,7 @@
 
     <ul class="p-5 space-y-3 ">
         <li v-for="message in messages" :key="message.id"> 
-            <div class="flex justify-between px-3 bg-gray-300 rounded-xl">
+            <div class="flex justify-between px-3 rounded-xl" :class="user===message.author ? 'bg-purple-400' :'bg-gray-300' ">
                 <span>{{message.text}}</span><span>by {{message.author}}</span>
             </div>
         </li>
