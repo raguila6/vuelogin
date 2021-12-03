@@ -4,9 +4,14 @@
 
     import useChat from "../composable/useChat"
 
-    const  {messages, unsubscribe} = useChat()
+    const  {messages, unsubscribe, sendMessage} = useChat()
 
     const newMessage = ref('')
+
+    const send = ()  => {
+        sendMessage(newMessage.value)
+        newMessage.value = ""
+    }
 
     onUnmounted(() => {
         unsubscribe()
@@ -32,7 +37,7 @@
 
     <div>
         <input class="w-full p-5 rounded-xl focus:outline-none focus:bg-red-300 " type="text" placeholder="Type a message!!!!" 
-        v-model="newMessage">
+        v-model="newMessage" @change="send">
     </div>
 
 </div>
